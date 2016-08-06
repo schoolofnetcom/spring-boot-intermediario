@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {{#tasks}}
+            <li>{{id}}</li>
+            <li>{{name}}</li>
+            <li>
+                <form action="/tasks/remove/{{id}}" method="post">
+                    <input type="submit">
+                </form>
+            </li>
+        {{/tasks}}
+    </ul>
+</body>
+</html>
